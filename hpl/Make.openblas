@@ -1,0 +1,32 @@
+SHELL        = /bin/sh
+CD           = cd
+CP           = cp
+LN_S         = ln -s
+MKDIR        = mkdir
+RM           = /bin/rm -f
+TOUCH        = touch
+ARCH         = openblas
+TOPdir       = $(HOME)/hpl-2.1
+INCdir       = $(TOPdir)/include
+BINdir       = $(TOPdir)/bin/$(ARCH)
+LIBdir       = $(TOPdir)/lib/$(ARCH)
+HPLlib       = $(LIBdir)/libhpl.a 
+MPdir        = /home/rpimpi/mpich2-install
+MPinc        = -I $(MPdir)/include
+MPlib        = $(MPdir)/lib/libmpich.a
+LAdir        = /home/pi/openblas-0.2.20
+LAinc        = 
+LAlib        = $(LAdir)/lib/libopenblas.a
+F2CDEFS      = -DAdd_ -DF77_INTEGER=int -DStringSunStyle
+HPL_INCLUDES = -I$(INCdir) -I$(INCdir)/$(ARCH) $(LAinc) $(MPinc)
+HPL_LIBS     = $(HPLlib) $(LAlib) $(MPlib)
+HPL_OPTS     =
+HPL_DEFS     = $(F2CDEFS) $(HPL_OPTS) $(HPL_INCLUDES) 
+CC           = mpicc
+CCNOOPT      = $(HPL_DEFS) 
+CCFLAGS      = $(HPL_DEFS) -L /lib64 -mcpu=cortex-a53 -mfloat-abi=hard -mfpu=neon-fp-armv8 -mneon-for-64bits -pthread 
+LINKER       = mpif77
+LINKFLAGS    = -pthread
+ARCHIVER     = ar
+ARFLAGS      = r
+RANLIB       = echo
