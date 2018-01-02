@@ -173,6 +173,29 @@ The 1200 MHz Cortex A53 is capable of 2.400+e00 floating point operations per se
 
 At 1.580e+00 Gflops, our efficiency is 0.6583.
 
+*NOTE*: Using air cooling (fan) I was able to increase N and improve efficiency to %80.
+
+Not bad for ~800MB available RAM!
+
+~~~
+================================================================================
+T/V                N    NB     P     Q               Time                 Gflops
+--------------------------------------------------------------------------------
+WR11C2R4        8064   144     1     4             182.25              1.919e+00
+HPL_pdgesv() start time Tue Jan  2 04:35:30 2018
+
+HPL_pdgesv() end time   Tue Jan  2 04:38:32 2018
+
+--------------------------------------------------------------------------------
+||Ax-b||_oo/(eps*(||A||_oo*||x||_oo+||b||_oo)*N)=        0.0019521 ...... PASSED
+================================================================================
+
+Finished      1 tests with the following results:
+              1 tests completed and passed residual checks,
+              0 tests completed and failed residual checks,
+              0 tests skipped because of illegal input values.
+--------------------------------------------------------------------------------
+~~~~
 
 ## Helpful links:
 1. user guide: https://github.com/xianyi/OpenBLAS/wiki/User-Manual
