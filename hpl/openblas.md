@@ -23,7 +23,6 @@ mkdir /home/pi/openblas-0.2.20/test
 wget https://gist.githubusercontent.com/xianyi/5780018/raw/c1d93058a2f61b88b9dd4237d2cf4a963065070b/time_dgemm.c
 gcc -o time_dgemm time_dgemm.c /home/pi/openblas-0.2.20/lib/libopenblas.a  -lpthread
 ./time_dgemm 1000 2000 4000
-	3b. test dynamic linking
 export LD_LIBRARY_PATH=/home/pi/openblas-0.2.20/lib
 gcc -o time_dgemm time_dgemm.c -I /home/pi/openblas-0.2.20/include -L /home/pi/openblas-0.2.20/lib/ -lopenblas  -lpthread
 ldd time_dgemm
