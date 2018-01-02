@@ -1,7 +1,6 @@
-
 Notes on running HPL on a Raspberry Pi 3 (Model B)
 
-  root@raspberrypi:~# lscpu
+  `root@raspberrypi:~# lscpu
   Architecture:          armv7l
   Byte Order:            Little Endian
   CPU(s):                4
@@ -14,7 +13,7 @@ Notes on running HPL on a Raspberry Pi 3 (Model B)
   CPU max MHz:           1200.0000
   CPU min MHz:           600.0000
   BogoMIPS:              76.80
-  Flags:                 half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32
+  Flags:                 half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm crc32`
 
   pi@raspberrypi:~/raspberrypi/hpl $ head /proc/meminfo 
   MemTotal:         949580 kB
