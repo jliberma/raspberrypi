@@ -1,5 +1,7 @@
 Notes on running HPL on a Raspberry Pi 3 (Model B)
 
+![my setup](https://raw.githubusercontent.com/jacobli/raspberrypi/master/hpl/pic.jpg)
+
 ~~~~
 ================================================================================
 T/V                N    NB     P     Q               Time                 Gflops
