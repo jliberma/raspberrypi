@@ -1,6 +1,6 @@
 Notes on running HPL on a Raspberry Pi 3 (Model B)
 
-![my setup](https://raw.githubusercontent.com/jacobli/raspberrypi/master/hpl/pic.jpg)
+![my setup](https://github.com/jliberma/raspberrypi/blob/master/hpl/pic.jpg)
 
 ~~~~
 ================================================================================
