@@ -23,7 +23,7 @@ Finished      1 tests with the following results:
 
 End of Tests.
 ================================================================================
-~~~
+~~~~
 
 By my calculation, **%88** efficiency with a lot of tuning.
 
