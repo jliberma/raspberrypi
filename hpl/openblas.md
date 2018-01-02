@@ -175,8 +175,7 @@ At 1.580e+00 Gflops, our efficiency is 0.6583.
 
 
 ## Helpful links:
-1. http://www.openblas.net/
-2. user guide: https://github.com/xianyi/OpenBLAS/wiki/User-Manual
-3. install guide: https://github.com/xianyi/OpenBLAS/wiki/Installation-Guide
-4. source code: https://github.com/xianyi/OpenBLAS
-5. download: http://github.com/xianyi/OpenBLAS/archive/v0.2.20.tar.gz
+1. user guide: https://github.com/xianyi/OpenBLAS/wiki/User-Manual
+2. install guide: https://github.com/xianyi/OpenBLAS/wiki/Installation-Guide
+3. source code: https://github.com/xianyi/OpenBLAS
+4. download: http://github.com/xianyi/OpenBLAS/archive/v0.2.20.tar.gz
