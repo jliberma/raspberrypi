@@ -1,0 +1,2 @@
+1. Use openmp with openblas instead of mpi
+2. Downclock cores to 1000 MHz
